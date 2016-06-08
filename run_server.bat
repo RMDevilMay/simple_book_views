@@ -1,0 +1,1 @@
+set DEBUG=books & npm start

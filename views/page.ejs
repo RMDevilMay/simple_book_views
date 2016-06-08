@@ -1,0 +1,45 @@
+<% include header %>
+	<body>
+		<div id="wrapper">
+			<div class="bd">
+				<div class="carousel">
+					<% for(i=0; i< userlist.length; i++) {%>
+					<div class="page-title">
+						<%= userlist[i].name %>
+					</div>
+					<div class="page-cover">
+                		<img src="<%= userlist[i].image %>" class="" width="106px" height="158px" alt="<%= userlist[i].image %>">
+            		</div>
+            		<div class="page-info">
+						<div class="page-author">
+							<p class="label">作者：</p>
+							<%= userlist[i].author %>
+						</div>
+						<div class="page-price">
+							<p class="label">价格：</p>
+							<%= userlist[i].price %>
+						</div>
+						<div class="page-pages">
+							<p class="label">页数：</p>
+							<%= userlist[i].pages %>
+						</div>
+						<div class="page-publishing">
+							<p class="label">出版社：</p>
+							<%= userlist[i].publishing %>
+						</div>
+						<div class="page-time">
+							<p class="label">出版时间：</p>
+							<%= userlist[i].time %>
+						</div>
+					</div>
+						<div class="page-infomation">
+							<%= userlist[i].infomation %>
+						</div>
+					
+					<% }%>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

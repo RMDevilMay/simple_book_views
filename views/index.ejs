@@ -1,0 +1,37 @@
+ <% include header %> 
+<body>
+<div id="wrapper">
+<div class="bd">
+	<div class="carousel">
+		<ul class="list-col list-col5 list-express slide-item">
+		<% for(i=0; i< userlist.length; i++) {%>
+          <li>
+            <div class="cover">
+              <a href="page?name=<%= userlist[i].name %>" title="<%= userlist[i].name %>">
+                <img src="<%= userlist[i].image %>" class="" width="106px" height="158px" alt="<%= userlist[i].image %>">
+              </a>
+            </div>
+            <div class="info">
+              <div class="title">
+                <a class="" href="page?name=<%= userlist[i].name %>" title="<%= userlist[i].name %>"><%= userlist[i].name %></a>
+              </div>
+              <div class="author">
+              <label>作者</label>
+                <%= userlist[i].author %>
+              </div>
+              <div class="price">
+              	<label>价格</label>
+				<%= userlist[i].price %> RMB
+              </div>
+            </div>
+          </li>
+          
+	<% } %>
+    </ul>
+	</div>
+
+</div>
+
+</div>
+</body>
+</html>

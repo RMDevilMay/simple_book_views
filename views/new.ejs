@@ -1,0 +1,53 @@
+ <% include header %> 
+  <script>
+
+  </script>
+ <body>
+<div id="wrapper">
+	<div>
+		<h2>新建文章</h2>
+		<div style="width:10em">
+		<form method="post" action="new" enctype="multipart/form-data">
+			<div style="margin-top:3em;">
+				<label class="label">标题</label>
+				<input type="text" name="title" style="width:700px;"></input>
+			</div>
+			<div style="margin-top:2em;margin-bottom:2em;">
+				<label>作者</label>
+				<input type="text" name="author" style="width:100px;"></input>
+			</div>
+			<div style="margin-top:2em;margin-bottom:2em;">
+				<label>售价</label>
+				<input type="text" name="price" style="width:100px;"></input>
+			</div>
+			<div style="margin-top:2em;margin-bottom:2em;">
+				<label>日期</label>
+				<input type="text" name="time" style="width:100px;"></input>
+			</div>
+			<div style="margin-top:2em;margin-bottom:2em;">
+				<label>出版社</label>
+				<input type="text" name="publishing" style="width:100px;"></input>
+			</div>
+			<div style="margin-top:2em;margin-bottom:2em;">
+				<label>页数</label>
+				<input type="text" name="pages" style="width:100px;"></input>
+			</div>
+			<div>
+				<label>请选择封面</label>
+				<input type="file" name="images">
+			</div>
+			<div style="margin-top:3em;">
+				<label>简介</label>
+				<textarea rows="10" name="info" style="width:700px";></textarea>
+			</div>
+			<div>
+				<input style="width:10em;height:3em" name="up" type="submit" value="上传"></input>
+			</div>
+
+
+		</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>
